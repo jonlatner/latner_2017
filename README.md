@@ -1,6 +1,6 @@
 # latner_2017
 
-[![DOI:10.7910/DVN/U0RTXA](http://img.shields.io/badge/DOI-10.7910/DVN/I8QMVS.425840-B31B1B.svg)](https://doi.org/10.7910/DVN/I8QMVS)
+[![DOI:10.7910/DVN/U0RTXA](http://img.shields.io/badge/DOI-10.7910/DVN/I8QMVS.425840-B31B1B.svg)](https://doi.org/10.7910/DVN/FYMVDA)
 
 https://doi.org/10.1111/cico.12253
 
