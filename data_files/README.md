@@ -1,0 +1,3 @@
+# data_files
+
+In the paper, we use a 20\% random sample as well as a 50\% random sample for the regional specifications.  Unfortunately, even a 1\% sample is over 100 MB, which is too large for my GitHub repository.  Furthermore, the Zillow data (in the support files) is also over 200 MB.  If users are interested, please see the replication files in the Harvard Dataverse (https://doi.org/10.7910/DVN/FYMVDA).

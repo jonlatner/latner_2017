@@ -1,0 +1,3 @@
+# do_files
+
+As stated in the README.md in the folder data_files, "In the paper, we use a 20\% random sample as well as a 50\% random sample for the regional specifications.  Unfortunately, even a 1\% sample is over 100 MB, which is too large for my GitHub repository.  Furthermore, the Zillow data (in the support files) is also over 200 MB.  Therefore, users will not be able to merge Zillow data in do file "02_clean_a_sample_1.do" or "02_clean_a_sample_20.do".  If users are interested, please see the replication files in the Harvard Dataverse (https://doi.org/10.7910/DVN/FYMVDA).

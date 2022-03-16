@@ -1,0 +1,134 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{endnotes}
+\usepackage[stable,hang]{footmisc}
+\hypersetup{pdfstartpage=1,
+            pdfpagemode=UseNone,
+            pdfstartview=FitH,
+            pdffitwindow=true,
+            bookmarks=false,
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=blue,
+            citecolor=blue}
+
+\begin{document}
+
+\clearpage
+
+\thispagestyle{empty}
+
+\begin{center}
+\large Rethinking the Role of Racial Segregation in the American Foreclosure Crisis \\
+\bigskip
+\normalsize
+Jonathan P. Latner $^{a}$\\
+\end{center}
+
+{\bf  Abstract}
+
+Racial segregation is an important factor in understanding the foreclosure crisis, but must be understood to operate in particular and specific ways. The primary, positive impact of segregation on foreclosure risk operates prior to loan origination through the differential access to loan quality by race. Afterward, the impact of segregation is negative. Drawing on a rare dataset of loans that combine loan performance and borrower characteristics, I use a competing risks proportional hazard model to examine the impact of race and racial segregation on risk of foreclosure among borrowers.  Results indicate that Black segregation has a large, negative impact on foreclosure risk.  Instead, the strongest positive contributor to foreclosure is the negative value of the home relative to the balance of the loan (i.e. `underwater,' as measured by the put option), which is also the mechanism that explains most of the difference in the foreclosure rate by race.  The negative impact of racial segregation on foreclosure risk is the result of a mismatch between cities with high levels of segregation and cities with large declines in home prices and related foreclosures.
+
+
+{\bf  Keywords:} segregation, race, foreclosure, subprime
+
+Please cite as: Latner, Jonathan (2017).  ``Rethinking the Role of Racial Segregation in the American Foreclosure Crisis.'' \emph{City \& Community}, 16(4):447-485.
+
+\vfill
+
+------------------------ \\
+\footnotesize
+$^{a}$ Corresponding Author: Jonathan P. Latner.  E-mail:  \url{jonlatner@gmail.com}\\
+The author wishes to acknowledge the following individuals for their help throughout the entire process (in alphabetical order): Jan Brülle, David Calnitsky, Matias Cocina, J. Michael Collins, Ted Gerber, Leah Gjertson, Pilar Gonalons-Pons, Gary Green, Carlotta Guistozzi, Erik Hembre, Jason Houle, Richard Latner, Timo Leper, Yifei Li, Kristina Lindemann, Heather O’Connell, Fabian Ochsenfeld, Ellen Pechman, Jacob Rugh, and Jody Schimek
+
+\cleardoublepage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TABLES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Tables}
+
+\begin{table}[!ht]
+\caption{Descriptive statistics}
+\begin{center}
+\scalebox{.85}{\input{../tables/descriptives_paper.tex}}
+\label{descriptives_paper}
+\end{center}
+\end{table}
+
+\begin{sidewaystable}[!ht]
+\caption{Competing risks hazard model}
+\begin{center}
+\scalebox{.7}{\input{../tables/stcrreg_default}}
+\label{stcrreg_default}
+\end{center}
+\end{sidewaystable}
+
+\begin{sidewaystable}[!ht]
+\caption{Competing risks hazard model - control variables from table \ref{stcrreg_default}}
+\begin{center}
+\scalebox{.7}{\input{../tables/control}}
+\label{control}
+\end{center}
+\end{sidewaystable}
+
+\begin{sidewaystable}[!ht]
+\caption{Marginal effect on the risk of foreclosure from the main model}
+\begin{center}
+\scalebox{1}{\input{../tables/effect_size_paper_region}}
+\label{effect_size}
+\end{center}
+\end{sidewaystable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%FIGURES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Figures}
+
+\begin{figure}[htp!]
+\centering
+\caption{Correlation between segregation and housing price index (HPI)}
+\centering
+\includegraphics[scale=.75]{../graphs/segregation_hpi}
+\label{segregation_hpi}
+\end{figure}
+
+\begin{figure}[htp!]
+\centering
+\caption{Correlation between RealtyTrac and CTS foreclosures across metropolitan
+areas}
+\centering
+\includegraphics[scale=.75]{../graphs/cor_cts_realtytrac}
+\label{cor_cts_realtytrac}
+\end{figure}
+
+
+\clearpage
+\begin{figure}[htp!]
+\centering
+\caption{Model adjusted cumulative foreclosure rate by race}
+\includegraphics[scale=.75]{../graphs/predict_basecif_center_race_region}
+\label{predict_basecif_race_policy}
+\end{figure}
+
+\begin{figure}[htp!]
+\centering
+\caption{Interaction between race and black segregation}
+\centering
+\includegraphics[scale=.75]{../graphs/predict_basecif_segregation_center_race_region}
+\label{predict_basecif_segregation}
+\end{figure}
+
+\end{document}
+
+
