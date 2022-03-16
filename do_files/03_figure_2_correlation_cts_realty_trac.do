@@ -90,14 +90,11 @@ recode recordtype (1/4=1) (nonm=.),gen(ForeInd)
 collapse (firstnm) year recordtype cbsa combinedstatisticalarea (sum) ForeInd, by(rtpropertyuniqueidentifier)
 collapse (sum) ForeInd, by(year cbsa combinedstatisticalarea)
 
-save createcbsadata.dta, replace
-*/
-
 /******
 3. Combine data
 ******/
 
-use "$support_files/createcbsadata.dta", clear
+*use "$support_files/createcbsadata.dta", clear
 
 replace cbsa = cbsa*10
 merge 1:1 cbsa year using "$support_files/year_reo_cbsa_sample_20.dta", nogen
@@ -118,6 +115,12 @@ replace reo_cts = . if reo_cts == 0
 4. Summarise data
 ******/
 collapse (sum) reo_*, by(metroid m_dwb)
+
+save "$support_files/createcbsadata_2.dta", replace
+
+*/
+
+use "$support_files/createcbsadata_2.dta", clear
 
 *Calculate correlation
 
